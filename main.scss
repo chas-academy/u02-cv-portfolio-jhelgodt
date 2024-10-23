@@ -1,19 +1,11 @@
 // main.scss
 
-// Testa grundläggande styling
-body {
-  background-color: #e0e0e0; // En ljusgrå bakgrund för hela sidan
-  font-family: Arial, sans-serif;
-}
+// Importera variabler först
+@import "variables";
 
-h1 {
-  color: #333; // En mörkare färg för huvudrubriker
-  text-align: center;
-  margin-top: 50px;
-}
+// Importera grundläggande stilar och layout
+@import "base";
+@import "layout";
 
-p {
-  font-size: 18px;
-  color: #555; // Ljusgrå för brödtext
-  text-align: center;
-}
+// Importera komponenter
+@import "components";

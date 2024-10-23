@@ -1,0 +1,26 @@
+// Grundläggande reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Globala stilar
+body {
+  font-family: $font-stack;
+  background-color: $background-color;
+  color: $text-color;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+// Typografi
+h1,
+h2,
+h3 {
+  color: $primary-color;
+}
+
+p {
+  margin-bottom: $margin-base;
+}
