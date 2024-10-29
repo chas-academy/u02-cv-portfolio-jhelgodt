@@ -1,0 +1,95 @@
+// Flexbox-baserad layout för sektioner
+header,
+section,
+footer {
+  padding: $padding-base $margin-base;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: $primary-color;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: $margin-base;
+}
+
+section {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: $margin-base;
+  padding: $padding-base;
+}
+/* Projects Section Styling */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: $primary-color; // Mörkare bakgrundsfärg för projektsektionen
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  color: $text-color; // Ljus textfärg
+}
+
+#projects h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  color: $primary-color;
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: $text-color;
+  font-size: 1.1em;
+}
+/* Skills List Styling */
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  background-color: $accent-color; // Mörkare bakgrund för kontrast
+  color: $text-color; // Ljus textfärg
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $primary-color;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.profile-image {
+  max-width: 300px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
