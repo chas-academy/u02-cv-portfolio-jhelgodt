@@ -2,43 +2,44 @@
 header,
 section,
 footer {
-  padding: $padding-base $margin-base;
-  max-width: 1200px;
+  padding: $padding-medium;
+  max-width: $max-width;
   margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: $margin-between-sections;
+}
+
+section {
+  background-color: $background-color; // Använd den definierade bakgrundsfärgen
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: $max-width; // Använd variabel för maxbredd
+  margin: $margin-between-sections auto; // Använd variabel för mellanrum mellan sektioner
+  padding: $padding-medium; // Använd padding-variabel
 }
 
 header {
   background-color: $primary-color;
   text-align: center;
-  color: #fff;
+  color: $text-color;
+  padding: $padding-large 0; // Använd stor padding för header
+  margin-bottom: $margin-between-sections; // Mellanrum under headern
 }
-
-header h1 {
-  color: #fff;
-  font-size: 2.5rem;
-  margin-bottom: $margin-base;
-}
-
-section {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: $margin-base;
-  padding: $padding-base;
-}
-/* Projects Section Styling */
 
 #projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
-  padding: 20px;
-  background-color: $primary-color; // Mörkare bakgrundsfärg för projektsektionen
+  padding: $padding-medium;
+  background-color: $primary-color; // Använd bakgrundsfärg
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  max-width: 800px;
-  color: $text-color; // Ljus textfärg
+  max-width: $max-width; // Använd maxbredd
+  color: $text-color;
 }
 
 #projects h2 {
@@ -92,4 +93,37 @@ ul li {
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+// Media Queries
+@media (max-width: $tablet) {
+  body {
+    padding: $padding-small;
+  }
+
+  section {
+    padding: $padding-small;
+  }
+
+  header,
+  #projects,
+  #about {
+    text-align: center;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: $padding-small;
+  }
+}
+
+@media (max-width: $mobile) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  .profile-image {
+    max-width: 200px;
+  }
 }

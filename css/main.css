@@ -32,37 +32,38 @@ h3 {
 header,
 section,
 footer {
-  padding: 10px 20px;
-  max-width: 1200px;
+  padding: 20px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-header {
-  background-color: #2c3e50;
-  text-align: center;
-  color: #fff;
-}
-
 header h1 {
-  color: #fff;
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
 section {
-  background-color: #fff;
+  background-color: #1a1a1d;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-/* Projects Section Styling */
+header {
+  background-color: #2c3e50;
+  text-align: center;
+  color: #ecf0f1;
+  padding: 60px 0;
+  margin-bottom: 20px;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0;
   padding: 20px;
   background-color: #2c3e50;
   border-radius: 10px;
@@ -126,6 +127,32 @@ ul li {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  section {
+    padding: 10px;
+  }
+  header,
+  #projects,
+  #about {
+    text-align: center;
+  }
+  ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+  .profile-image {
+    max-width: 200px;
+  }
+}
 button,
 .contact-btn {
   background-color: #3498db;
