@@ -1,6 +1,14 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
+    <meta name="description" content="Portfolio of Joakim Helgodt - Fullstack Web Developer focusing on JavaScript, PHP, and open-source technologies." />
+    <meta property="og:title" content="Joakim Helgodt - Portfolio" />
+    <meta property="og:description" content="Explore the projects, skills, and experiences of Joakim Helgodt, a Fullstack Web Developer with a background in SaaS sales and e-commerce." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://joakimhelgodtportfolio.com" />
+    <meta property="og:image" content="http://joakimhelgodtportfolio.com/images/Joakim%20-%20Code%20Caster.png" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -8,60 +16,119 @@
     <link rel="stylesheet" href="/css/main.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="header-content">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Header / Navbar -->
+    <header id="main-header" role="banner">
+      <nav class="navbar" aria-label="Main Navigation" role="navigation">
         <h1>Joakim Helgodt</h1>
-        <p>Fullstack Web Developer Student</p>
-        <a href="#contact" class="contact-btn">Contact Me</a>
-      </div>
+        <ul>
+          <li><a href="#about" aria-label="About Me Section">About</a></li>
+          <li><a href="#projects" aria-label="Projects Section">Projects</a></li>
+          <li><a href="#contact" aria-label="Contact Section">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- About Me Section -->
-
-    <section id="about">
-      <h2>About Me</h2>
-      <img
-        src="images/Joakim - Code Caster.png"
-        alt="Joakim - Code Caster"
-        class="profile-image"
-      />
-      <p>
-        I'm currently a Fullstack Web Developer student at Chas Academy, focused
-        on JavaScript, PHP, and open-source technologies. I have experience in
-        SaaS sales and e-commerce, combining technical knowledge with business
-        insight.
-      </p>
-      <h3>Skills</h3>
-      <ul>
-        <li>JavaScript</li>
-        <li>PHP</li>
-        <li>HTML & CSS</li>
-        <li>SaaS Sales</li>
-        <li>E-Commerce</li>
-      </ul>
+    <section id="about" class="section about" role="region" tabindex="0" aria-labelledby="about-heading">
+      <div class="about-content">
+        
+        <div class="about-video">
+          <img src="images/Joakim - Code Caster.png" alt="Joakim Helgodt - Magic the Gathering inspired profile picture" class="profile-image" />
+        </div>
+        
+        
+          <h2 id="about-heading">About Me</h2>
+          <p>
+            Hi, I'm Joakim Helgodt, a Fullstack Web Developer student at Chas
+            Academy, focusing on JavaScript, PHP, and open-source technologies.
+            My background includes experience in SaaS sales and e-commerce,
+            where I blend technical skills with business insight. Thank you for
+            watching!
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Fitness Tracker</h3>
-        <p>
-          A web application for tracking fitness goals and progress. Built with
-          JavaScript.
-        </p>
-      </div>
-      <div class="project">
-        <h3>Budget Tracker</h3>
-        <p>
-          A simple tool to track expenses and manage your budget. Developed
-          using HTML, CSS, and JavaScript.
-        </p>
+    <section id="projects" class="section projects" role="region" tabindex="0" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Fitness Tracker</h3>
+          <p>
+            A web application for tracking fitness goals and progress, developed
+            with JavaScript.
+          </p>
+        </div>
+        <div class="project-item">
+          <h3>Budget Tracker</h3>
+          <p>
+            A simple tool to track expenses and manage your budget, built with
+            HTML, CSS, and JavaScript.
+          </p>
+        </div>
       </div>
     </section>
 
-    <footer>
+    <!-- Contact Section -->
+        <!-- Skills Table Section -->
+    <section id="skills" class="section skills" role="region" tabindex="0" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills Overview</h2>
+      <table class="skills-table" aria-label="Skills Table" role="table">
+        <thead>
+          <tr>
+            <th scope="col" role="columnheader">Skill</th>
+            <th scope="col" role="columnheader">Proficiency Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>JavaScript</td>
+            <td>Currently learning</td>
+          </tr>
+          <tr>
+            <td>PHP</td>
+            <td>Currently learning</td>
+          </tr>
+          <tr>
+            <td>HTML & CSS</td>
+            <td>Currently learning</td>
+          </tr>
+          <tr>
+            <td>SaaS Sales</td>
+            <td>8 years of experience</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Footer -->
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact" role="region" tabindex="0" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>For any inquiries or collaborations, reach out to me at:</p>
+      <p>
+        <a href="mailto:joakim.helgodt@gmail.com" aria-label="Email Joakim Helgodt">joakim.helgodt@gmail.com</a>
+      </p>
+    </section>
+
+
+    <!-- Video Section -->
+    <section id="magic-video" class="section magic-video" role="region" tabindex="0" aria-labelledby="magic-video-heading">
+      <h2 id="magic-video-heading">Latest Magic: The Gathering Commander Deck</h2>
+      <p>Check out my latest Magic: The Gathering Commander deck that I'm going to try out:</p>
+      <iframe aria-label="Magic the Gathering Commander Deck Video" width="100%" height="100%"
+        src="https://www.youtube.com/embed/H85h1J0meVE?feature=shared"
+        title="Magic the Gathering Commander Deck Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </section>
+<footer role="contentinfo">
       <p>&copy; 2024 Joakim Helgodt</p>
     </footer>
   </body>
